@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Govardhan Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Portfolio</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#" onclick="showAbout()">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#" onclick="showSkills()">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#" onclick="showQualifications()">Qualification</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#" onclick="showCertifications()">Certifications</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#" onclick="showProjects()">Projects</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700"><a href="#" onclick="showContact()">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#" onclick="showAbout()">About</a>
+                <a href="#" onclick="showSkills()">Skills</a>
+                <a href="#" onclick="showQualifications()">Qualification</a>
+                <a href="#" onclick="showCertifications()">Certifications</a>
+                <a href="#"onclick="showProjects()">Projects</a>
+                <a href="#"onclick="showContact()">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="main-container">
+            <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                <img src="https://res.cloudinary.com/dfw8y5fof/image/upload/v1734281074/Picsart_24-12-15_22-13-26-707_vyqatw.png">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">
+                    Hey I'm <span>Govardhan Sai Ganesh Rajulapati</span>
+                </h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span></span></div>
+                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
+                    I’m a CSE Data Science student passionate about uncovering insights from data to solve real-world problems. Skilled in Python, Java, Tableau, and Power BI, I enjoy working on projects in data analysis and visualization. My goal is to use data science to drive impactful decisions and innovation.
+                </p>
+                <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                    <a href="https://github.com/GovardhanRajulapati073"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.facebook.com/ganesh.rajulapati.7?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/govardhan-sai-ganesh-rajulapati-72b155295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://x.com/RGSGanesh7?t=0s1_p61zKU7jnViuWNRDSw&s=09"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/govardhan_073?igsh=ZjhiN2F6OWlrdzVl"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/qr/SEEWVPMLCPMVJ1"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="http://t.me/govardhanrajulapatil"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+                <div class="btn"data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                    <a href="https://drive.google.com/file/d/1KcJsxzDur2oMFOLY31nzHSGZdk8MfSEc/view?usp=drive_link" target="_blank">
+                        <button>Download Resume</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <div id="about-section" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="hideAbout()">&times;</span>
+            <h2><i class="fas fa-info-circle"></i> About Me</h2>
+            <p>
+                Motivated and detail-oriented Computer Science and Engineering 
+                (CSE) Data Science student with hands-on experience in Java and 
+                Python programming. Adept at solving complex problems, designing 
+                innovative solutions, and building user-friendly web applications. 
+                Enthusiastic about data-driven insights, machine learning, and full stack development. 
+                A proactive team player with leadership experience in organizing NSS community events 
+                and contributing to impactful projects. Currently seeking opportunities to leverage 
+                technical and analytical skills in real-world applications while expanding my portfolio 
+                in web and data science.
+            </p>
+        </div>
+    </div>
+
+
+
+    
+<!-- Skills Section -->
+<div id="skills-section" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="hideSkills()">&times;</span>
+        <h2><i class="fas fa-cogs"></i> Skills</h2>
+        <p><strong>Programming Languages:</strong> Proficient in Java & Python.</p><br>
+        <p><strong>Data Science:</strong> Experienced with data analysis, data visualization, and machine learning algorithms.</p><br>
+        <p><strong>Web Development:</strong> Knowledge of HTML, CSS, JavaScript, and basic front-end frameworks.</p><br>
+        <p><strong>Software Development:</strong> Strong understanding of algorithms, data structures, and object-oriented programming (OOP).</p><br>
+        <p><strong>Software Tools:</strong> Matplotlib/Seaborn, Microsoft Excel, Google Colab, Git & GitHub, HTML, CSS, JavaScript</p><br>
+        <p><strong>Project Management:</strong> Experience with collaborative projects, utilizing version control and agile methodologies.</p><br>
+        <!-- Skill Icons -->
+        <div class="skills-icons" style="text-align: center;">
+            <div style="display: inline-block; text-align: center; margin: 20px;">
+                <i class="fab fa-java" style="font-size: 3rem; color: #154E91;"></i>
+                <p>Java</p>
+            </div>
+            <div style="display: inline-block; text-align: center; margin: 20px;">
+                <i class="fab fa-python" style="font-size: 3rem; color: #154E91;"></i>
+                <p>Python</p>
+            </div>
+            <div style="display: inline-block; text-align: center; margin: 20px;">
+                <i class="fab fa-html5" style="font-size: 3rem; color: #154E91;"></i>
+                <p>HTML</p>
+            </div>
+            <div style="display: inline-block; text-align: center; margin: 20px;">
+                <i class="fab fa-css3-alt" style="font-size: 3rem; color: #154E91;"></i>
+                <p>CSS</p>
+            </div>
+            <div style="display: inline-block; text-align: center; margin: 20px;">
+                <i class="fab fa-js" style="font-size: 3rem; color: #154E91;"></i>
+                <p>JavaScript</p>
+            </div>
+            <div style="display: inline-block; text-align: center; margin: 20px;">
+                <i class="fas fa-file-excel" style="font-size: 3rem; color: #154E91;"></i>
+                <p>MS Excel</p>
+            </div>
+            <div style="display: inline-block; text-align: center; margin: 20px;">
+                <i class="fas fa-file-word" style="font-size: 3rem; color: #154E91;"></i>
+                <p>MS Word</p>
+            </div>
+            <div style="display: inline-block; text-align: center; margin: 20px;">
+                <i class="fas fa-flask" style="font-size: 3rem; color: #154E91;"></i>
+                <p>Google Colab</p>
+            </div>
+            <div style="display: inline-block; text-align: center; margin: 20px;">
+                <i class="fas fa-code" style="font-size: 3rem; color: #154E91;"></i>
+                <p>VS Code</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    <!-- Qualifications Section -->
+      <div id="qualifications-section" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="hideQualifications()">&times;</span>
+            <h2><i class="fas fa-graduation-cap"></i> Qualification</h2> <!-- Icon for qualifications -->
+            <!-- Bachelor of Engineering Section -->
+        <p class="highlight"><strong><i class="fas fa-cogs"></i> Bachelor of Engineering:</strong></p> <!-- Icon for Bachelor of Engineering -->
+        <p><strong><i class="fas fa-university"></i> University:</strong> SR University, Ananthasagar, Hasanparthy, Hanumakonda 506371, Telangana, India</p> <!-- Icon for University -->
+        <p><strong><i class="fas fa-calendar-alt"></i> Year of Passing:</strong> 2027</p> <!-- Icon for Year of Passing -->
+        <br>
+        
+        <!-- Intermediate Education Section -->
+        <p class="highlight"><strong><i class="fas fa-school"></i> Intermediate Education:</strong></p> <!-- Icon for Intermediate -->
+        <p><strong><i class="fas fa-university"></i> Institution:</strong> New Vision Junior College, Khammam, Telangana, India</p> <!-- Icon for Institution -->
+        <p><strong><i class="fas fa-calendar-check"></i> Year of Completion:</strong> 2022</p> <!-- Icon for Year of Completion -->
+        <br>
+        
+        <!-- Secondary Education Section -->
+        <p class="highlight"><strong><i class="fas fa-chalkboard-teacher"></i> Secondary Education (10th):</strong></p> <!-- Icon for Secondary -->
+        <p><strong><i class="fas fa-school"></i> School:</strong> Sai Spurthi DAV School, B. Gangaram, Telangana, India</p> <!-- Icon for School -->
+        <p><strong><i class="fas fa-calendar-check"></i> Year of Completion:</strong> 2020</p> <!-- Icon for Year of Completion -->
+        
+        <canvas id="marksChart" width="200" height="200"></canvas>
+      </div>
+    </div>
+
+
+
+    <!-- Contact Section -->
+    <div id="contact-section" class="modal">
+        <div class="modal-content">
+             <span class="close-btn" onclick="hideContact()">&times;</span>
+             <h2><i class="fas fa-user"></i> Contact</h2>
+             <p><strong><i class="fas fa-envelope"></i> Email:</strong> rgsganesh07@gmail.com</p>
+             <p><strong><i class="fas fa-phone"></i> Phone:</strong> +91 9390711600</p>
+             <p><strong><i class="fab fa-linkedin"></i> LinkedIn:</strong> <a href="https://www.linkedin.com/in/govardhan-sai-ganesh-rajulapati-72b155295" target="_blank">LinkedIn Profile</a></p>
+             <p><strong><i class="fab fa-github"></i> GitHub:</strong> <a href="https://github.com/GovardhanRajulapati073" target="_blank">GitHub Profile</a></p>
+             <p><strong><i class="fas fa-map-marker-alt"></i> Address:</strong> SR University, Ananthsagar mandal, Hasanparthy, Anantasagar Colony, Telangana 506371</p>
+        </div>
+    </div>
+
+
+
+
+    <!-- Projects Section -->
+<div id="projects-section" class="modal">
+    <div class="modal-content">
+        <!-- Close Button -->
+        <span class="close-btn" onclick="hideProjects()">&times;</span>
+        <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+        
+        <!-- Projects Table -->
+        <table class="projects-table">
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Project Title</th>
+                    <th>Source</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        <a href="https://drive.google.com/file/d/1E7djc34rkGhhHGbuwxktYCroFpiwrnZX/view?usp=drive_link" target="_blank">
+                            TESLA FY-2018 CAR SALES & HISTORY
+                        </a>
+                    </td>
+                    <td>
+                            Power BI
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>
+                        <a href="https://drive.google.com/file/d/1IwgcjmUhz0PytOjAygZXnfzXu1T8n9Yg/view?usp=drive_link" target="_blank">
+                            HR ANALYTICS DASHBOARD
+                        </a>
+                    </td>
+                    <td>
+                            Power BI
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>
+                        <a href="https://drive.google.com/file/d/1SYUk2PrYYxZ5XfLf-AaaLIeZMB8YiFJw/view?usp=drive_link" target="_blank">
+                            Call Center Dashboard
+                        </a>
+                    </td>
+                    <td>
+                            Power BI
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>
+                        <a href="https://drive.google.com/file/d/1qnjuEX18PSWKFzSwvn9DmCfJM3oXeQ_I/view?usp=drive_link" target="_blank">
+                            CHENNAI SUPER KINGS ANALYTICS
+                        </a>
+                    </td>
+                    <td>
+                            Power BI
+                        </a>
+                    </td>
+                </tr>
+                <!-- Add more projects as needed -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+
+
+    <!-- Certifications Section -->
+    <div id="certifications-section" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="hideCertifications()">&times;</span>
+            <h2><i class="fas fa-certificate"></i> Certifications</h2>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <tr>
+                        <th>S.No</th>
+                        <th>Certification Name</th>
+                        <th>Certification Platform</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><a href="https://drive.google.com/file/d/1JKN7MybJ-S9E4sPCHUSP3BrrNcwXU92f/view?usp=drive_link" target="_blank">Python for Beginners</a></td>
+                        <td>Simplilearn</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><a href="https://drive.google.com/file/d/1qA2sJfpR49VGIkURmyBssqs2h5YqmRtP/view?usp=drive_link" target="_blank">Java Basic</a></td>
+                        <td>HackerRank </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><a href="https://drive.google.com/file/d/1AlICmXPpcyrfpBJdqwfJU-8hc0CO3oZB/view?usp=drive_link" target="_blank">Operating Systems Fundamentals</a></td>
+                        <td>Coursera</td>
+                    <tr>
+                        <td>4</td>
+                        <td><a href="https://drive.google.com/file/d/1dWEDMdbLzIHOoOUPs77pSK-sQBY0NtAT/view?usp=drive_link" target="_blank">Operating Systems</a></td>
+                        <td>Saylor Academy</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><a href="https://drive.google.com/file/d/1GXmfI93mNGn6-3mo10VDaBS5IXyPS-WI/view?usp=drive_link" target="_blank">Computer Communications and Networks</a></td>
+                        <td>Saylor Academy</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td><a href="https://drive.google.com/file/d/1wn9_60rQ4Kgw63j7eG1yorQblDHYPDKL/view?usp=drive_link" target="_blank">Discrete Mathematics-Part 1</a></td>
+                        <td>Great learning</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td><a href="https://drive.google.com/file/d/1V3ov5Nttf6MusuT3wZ4zncMgz_4Hlu9f/view?usp=drive_link" target="_blank">Discrete Mathematics-Part 2</a></td>
+                        <td>Great learning</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td><a href="https://drive.google.com/file/d/1OOON4XVmYOMjqunWPh1f-07o2u4H7Z5b/view?usp=drive_link" target="_blank">AI-ML VIRTUAL Internship</a></td>
+                        <td>AICTE-Eduskills</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td><a href="https://drive.google.com/file/d/14vefjJr3qvyRB5RpB2Eps4WcM007hdqU/view?usp=drive_link" target="_blank">Web Development</a></td>
+                        <td>AICTE-Eduskills</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td><a href="https://drive.google.com/file/d/1dFcQSwZh6j7nwtmiVMTAQuxvmjVbfsc0/view?usp=drive_link" target="_blank">Web-Fullstack Developer VIRTUAL Internship</a></td>
+                        <td>AICTE-Eduskills</td>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td><a href="https://drive.google.com/file/d/1agWl0qYxvD9PaDdlRi-e8pyRARpvub8V/view?usp=drive_link" target="_blank">Introduction to Networks</a></td>
+                        <td>CISCO Networking Academy</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td><a href="https://drive.google.com/file/d/1n_vERgScMhDZKbrjF_xKo5b0aCXpS3ox/view?usp=drive_link" target="_blank">Data Analytics Essentials</a></td>
+                        <td>CISCO Networking Academy</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td><a href="https://drive.google.com/file/d/1lNWiQTMy8osV9MpsHXAaRAb_mBEMXpSY/view?usp=drive_link" target="_blank">Networking Basics</a></td>
+                        <td>CISCO Networking Academy</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td><a href="https://drive.google.com/file/d/1FVV1FERth3QDhVEZUWEZuasF-WHt3-Rh/view?usp=drive_link" target="_blank">Junior Cybersecurity Analyst Career Path</a></td>
+                        <td>CISCO Networking Academy</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td><a href="https://drive.google.com/file/d/16tFmcDDnCbtL4x3fWMqRMeRP8r9jyRDI/view?usp=drive_link" target="_blank">Endpoint Security</a></td>
+                        <td>CISCO Networking Academy</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td><a href="https://drive.google.com/file/d/1Io9HGMr3kEBC8IQvn57WmuENnDL4vpIJ/view?usp=drive_link" target="_blank">Microsoft Power BI</a></td>
+                        <td>Infosys SpringBoard</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td><a href="https://drive.google.com/file/d/120zphAVm7W6gqIBdwq131wkQSKh9QywK/view?usp=drive_link" target="_blank">Introduction to Robotic Process Automation</a></td>
+                        <td>Infosys SpringBoard</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td><a href="https://drive.google.com/file/d/1ehhWzVqmwrUEDCcujpfEpMQnqnq15oo3/view?usp=drive_link" target="_blank">Introduction to Natural Language Processing</a></td>
+                        <td>Infosys SpringBoard</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td><a href="https://drive.google.com/file/d/11aGSbW-EHt7-b_xZo0tAuKEops6iFCl1/view?usp=drive_link" target="_blank">Introduction to Deep Learning</a></td>
+                        <td>Infosys SpringBoard</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td><a href="https://drive.google.com/file/d/1lnr01VHor_9yELp8su-cdJd1DSk2KaVD/view?usp=drive_link" target="_blank">Introduction to Artificial Intelligence</a></td>
+                        <td>Infosys SpringBoard</td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td><a href="https://drive.google.com/file/d/1sTsQwgIB8ut28KRiZb8VYOc7-6CZM6jD/view?usp=drive_link" target="_blank">Data Visualization with Tableau</a></td>
+                        <td>Infosys SpringBoard</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td><a href="https://drive.google.com/file/d/1FXrUfoNsM_kPOBuO6pDausgd2qlaRuSC/view?usp=drive_link" target="_blank">Computer Vision 101</a></td>
+                        <td>Infosys SpringBoard</td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <td><a href="https://drive.google.com/file/d/1z_RGFAPPv01NoUVZHnpPrclKzAnbQVB1/view?usp=drive_link" target="_blank">Complete UNIX & Linux OS Fundamentals Training</a></td>
+                        <td>Infosys SpringBoard</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+
+        function hamburg() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(0px)";
+            navbar.style.visibility = "visible";
+        }
+        function cancel() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(-500px)";
+            navbar.style.visibility = "hidden";
+        }
+        function showAbout() {
+            document.getElementById("about-section").style.display = "block";
+        }
+        function hideAbout() {
+            document.getElementById("about-section").style.display = "none";
+        }
+        function showSkills() {
+            document.getElementById("skills-section").style.display = "block";
+        }
+        function hideSkills() {
+            document.getElementById("skills-section").style.display = "none";
+        }
+        function showCertifications() {
+            document.getElementById("certifications-section").style.display = "block";
+        }
+        function hideCertifications() {
+            document.getElementById("certifications-section").style.display = "none";
+        }
+        function showContact() {
+            document.getElementById("contact-section").style.display = "block";
+        }
+        function hideContact() {
+            document.getElementById("contact-section").style.display = "none";
+        }
+
+        function showProjects() {
+            document.getElementById("projects-section").style.display = "block";
+        }
+        function hideProjects() {
+            document.getElementById("projects-section").style.display = "none";
+        }
+
+
+        function showQualifications() {
+    document.getElementById("qualifications-section").style.display = "block";
+    createDonutChart();
+}
+
+function hideQualifications() {
+    document.getElementById("qualifications-section").style.display = "none";
+}
+
+function createDonutChart() {
+    const ctx = document.getElementById('marksChart').getContext('2d');
+    const marksChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['10th', 'Intermediate', 'B.Tech'],
+            datasets: [{
+                label: 'Marks/GPA/Percentage',
+                data: [84, 74.3, 80.3], // Replace with your actual marks
+                backgroundColor: [
+                    'rgba(31, 98, 173, 1)',
+                ],
+                borderColor: [
+                    'rgba(31, 98, 173, 1)',
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'top',
+                },
+                title: {
+                    display: true,
+                    text: 'Performance Highlights: 10th, Inter, and B.Tech'
+                }
+            }
+        }
+    });
+}
+
+    </script>
+</body>
+</html>
